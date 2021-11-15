@@ -422,5 +422,20 @@
 			reg = <0xf8005000 0x1000>;
 			timeout-sec = <10>;
 		};
+
+		rsdram: ramuio@10000000 {
+            compatible = "generic-uio";
+            reg = <0x10000000 0x10000000>;
+        };
+
+		pl2ps: pl2psuio@43c00000 {
+            compatible = "generic-uio";
+            reg = <0x43c00000 0x1000>;
+        };
+
+		ps2pl: ps2pluio@43c10000 {
+            compatible = "generic-uio";
+            reg = <0x43c10000 0x1000>;
+        };
 	};
 };
